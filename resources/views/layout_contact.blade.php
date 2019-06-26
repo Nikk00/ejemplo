@@ -111,7 +111,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="contact-grids mt-5">
 				<div class="row">
 					<div class="col-lg-6 col-md-6 contact-left-form">
-						<form action="{{route('mensajes')}}" method="post">
+						<form action="{{route('mensaje')}}" method="post">
 							{{ csrf_field() }}
 							<div class=" form-group contact-forms">
 							  <input name="name" type="text" class="form-control" placeholder="Name" required="">

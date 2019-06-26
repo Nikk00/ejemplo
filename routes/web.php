@@ -21,7 +21,7 @@ Route::get('/booking', 'PagesController@booking');
 Route::get('/contact', 'PagesController@contact');
 Route::get('/packages', 'PagesController@packages');
 Route::get('/services', 'PagesController@services');
-Route::post('mensajes',function(){
+Route::post('mensaje',function(){
 	$data=request()->all();
 	//var_dump($data);
 	Mail::send("email.mensaje", $data, function($message) use ($data){
@@ -30,4 +30,4 @@ Route::post('mensajes',function(){
 		->subject($data['body']);
 	});
 	return back();
-})->name('mensajes');
+})->name('mensaje');
